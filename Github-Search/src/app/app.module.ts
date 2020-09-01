@@ -1,21 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SearchUserComponent } from './search-user/search-user.component';
-import { UserRepoListComponent } from './user-repo-list/user-repo-list.component';
-import { UserDataComponent } from './user-data/user-data.component';
-import { DateCountPipe } from './date-count.pipe';
+import { DatepipePipe } from './date-count.pipe';
 import { LogoHighlightDirective } from './logo-highlight.directive';
-import { AboutComponent } from './about/about.component';
-import { GithubComponent } from './github/github.component';
-import { GitProfileComponent } from './git-profile/git-profile.component';
-import { GitUsersComponent } from './git-users/git-users.component';
-import { UserSearchComponent } from './user-search/user-search.component';
-import { RepoListComponent } from './repo-list/repo-list.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import {RepoListComponent} from './repo-list/repo-list.component'
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -23,21 +20,20 @@ import { RepoListComponent } from './repo-list/repo-list.component';
     NavbarComponent,
     NotFoundComponent,
     SearchUserComponent,
-    UserRepoListComponent,
-    UserDataComponent,
-    DateCountPipe,
+    DatepipePipe,
     LogoHighlightDirective,
-    AboutComponent,
-    GithubComponent,
-    GitProfileComponent,
-    GitUsersComponent,
-    UserSearchComponent,
-    RepoListComponent
+    RepoListComponent,
+    HttpClientModule
+
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
