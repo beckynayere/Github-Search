@@ -28,6 +28,8 @@ export class UserDataComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getSearchUser('beckynayere');
+
     this.getSearchUser('beckynayere')
     // tslint:disable-next-line:prefer-const
     let particlesJS;
