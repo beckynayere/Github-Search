@@ -14,6 +14,8 @@ import { AboutComponent } from './about/about.component';
 import { GithubComponent } from './github/github.component';
 import { GitProfileComponent } from './git-profile/git-profile.component';
 import { GitUsersComponent } from './git-users/git-users.component';
+import { UserSearchComponent } from './user-search/user-search.component';
+import { RepoListComponent } from './repo-list/repo-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { GitUsersComponent } from './git-users/git-users.component';
     AboutComponent,
     GithubComponent,
     GitProfileComponent,
-    GitUsersComponent
+    GitUsersComponent,
+    UserSearchComponent,
+    RepoListComponent
   ],
   imports: [
     BrowserModule,
