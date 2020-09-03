@@ -507,8 +507,8 @@ p {
   }
 }
  body{
-   background-image: url("../assets/image/becky.jpg");
-  background-image: linear-gradient(to right,#a28089,#8458B3,#d0bdf4, #e5eaf5,#a0d2eb);
+   background-image: url("./assets/image/becky.jpg");
+  /* background-image: linear-gradient(to right,#a28089,#8458B3,#d0bdf4, #e5eaf5,#a0d2eb); */
 }
 .gsearch{
   font-size: 60px;
@@ -519,3 +519,5 @@ p {
   
 
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,7 +1,6 @@
-<!-- <p>user-data works!</p> -->
+<app-search-user (searchEmmiter) ="getSearchUser($event)"></app-search-user>
 <div class="overlay">
-    <h2 class="mb-5 text-center gsearch">GithubSearch</h2>
-    <app-search-user (searchEmmiter)="getSearchedUser($event)"></app-search-user>
+    <h2 class="mb-5 text-center gsearch">Github-Search</h2>
     <div *ngFor="let u of user">
       <div class="main-content container">
         <div class="container mt-7">
@@ -12,7 +11,8 @@
                   <div class="col-lg-3 order-lg-2">
                     <div class="card-profile-image">
                       <a href="#">
-                        <img src="{{u.avatar_url}}" class="rounded-circle">
+                        <!-- <img src="{{u.download.png_url}}" class="rounded-circle"> -->
+                        <img src="../../assets/image/becky.JPG" class="rounded-circle">
                       </a>
                     </div>
                   </div>

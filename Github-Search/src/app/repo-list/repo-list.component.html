@@ -1,10 +1,8 @@
 <!-- <p>repo-list works!</p> -->
+ <app-search-user (searchEmmiter)="getRepo($event)"></app-search-user>
 <div class="jumbotron">
-    <h1 class="text-center gsearch">Githubsearch Repo</h1>
+    <h1 class="text-center gsearch">Github-Search Repo</h1>
     <h5 class="text-center repo-number text-white"><span id="num">{{myRepo.length}}</span> Repositories found</h5>
-    <app-search-user (searchEmmiter)="getRepo($event)"></app-search-user>
-  
-  
   </div>
   <div class="container card-columns">
     <div class="card" *ngFor="let repo of myRepo">
