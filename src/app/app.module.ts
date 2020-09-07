@@ -14,6 +14,8 @@ import {RepoListComponent} from './repo-list/repo-list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DatepipePipe } from './date-count.pipe';
 import { LogoHighlightDirective } from './logo-highlight.directive';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 
 
 
@@ -28,7 +30,7 @@ import { LogoHighlightDirective } from './logo-highlight.directive';
     DatepipePipe,
     LogoHighlightDirective
     
-    
+   
 
   ],
 
@@ -37,7 +39,9 @@ import { LogoHighlightDirective } from './logo-highlight.directive';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
     
   ],
 
